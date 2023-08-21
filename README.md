@@ -68,5 +68,25 @@ To execute the program
 
 ```./a.out```
 
+![Screenshot from 2023-08-21 17-44-23](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ac408668-89fe-468f-a574-e6ef1124f352)
+
+## RISCV GCC Compiler and Dissemble
+
+Now use riscv gcc compiler to compile the c program 
+
+```riscv64-unknown-elf-gcc -Ofast -mabi=lb64 -march=rv64i -o sum.o sum.c```
+
+![Screenshot from 2023-08-21 17-50-17](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/4c29c199-e19c-48f9-b85b-d6778dae87c7)
+
+If you find any error as above use follwing three commands to proceed further 
+
+```
+vim ~/.bashrc
+export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin:$PATH
+export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/bin:$PATH
+```
+
+
+
 
 
