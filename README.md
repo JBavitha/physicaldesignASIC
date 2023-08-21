@@ -18,3 +18,8 @@ riscv64-unknown-elf-gcc --version
 ## Introduction to RISC-V ISA and GNU Compiler Chain
 ### ISA(Instruction Set Architecture)
 - Instruction Set Architecture (ISA) is a crucial component of computer architecture that defines the set of instructions that a computer's central processing unit (CPU) can execute. It serves as an interface between the hardware and software, specifying how programs interact with the CPU and memory.
+- It provides a stable interface for software programmers, allowing them to write code that can run on various CPUs with the same ISA.
+- At the same time, hardware designers have the flexibility to implement the ISA in different ways, optimizing for factors like speed, power efficiency, and cost.
+### RISC-V(Reduced Instruction Set Computing -Five)
+- Open Standard: RISC-V is an open standard ISA, which means that its specifications are freely available to the public. This openness encourages collaboration, innovation, and the development of a wide range of processors by various organizations and individuals.
+- Simplicity: RISC-V follows the RISC philosophy of simplicity and orthogonality. It has a relatively small number of instructions with a regular encoding format, making it easier to design and optimize processors.
