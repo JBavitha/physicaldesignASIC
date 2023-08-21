@@ -81,7 +81,7 @@ Now use riscv gcc compiler to compile the c program
 If you find any error as above use follwing three commands to proceed further 
 
 ```
-vim ~/.bashrc
+
 export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin:$PATH
 export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/bin:$PATH
 ```
@@ -89,9 +89,9 @@ To get dissembled ALP code use following command
 
 ```riscv64-unknown-elf-objdump -d sum.o | less```
 
-In order to view main section type 
+In order to view any instance section type 
 
-```/main```
+```/instance```
 
 Here since we used -Ofast optimisation.
 
