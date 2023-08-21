@@ -85,6 +85,23 @@ vim ~/.bashrc
 export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/bin:$PATH
 export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/bin:$PATH
 ```
+To get dissembled ALP code use following command
+
+```riscv64-unknown-elf-objdump -d sum.o | less```
+
+In order to view main section type 
+
+```/main```
+
+Here since we used -Ofast optimisation we have 12 instuctions.
+
+![Screenshot from 2023-08-21 18-04-27](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/71991017-4539-4474-836f-bbf488a258c2)
+
+Here since we used -O1 optimisation we have 15 instuctions.
+
+![Screenshot from 2023-08-21 18-14-47](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ec75c287-653f-4348-b371-302021390533)
+
+
 
 
 
