@@ -93,11 +93,11 @@ In order to view main section type
 
 ```/main```
 
-Here since we used -Ofast optimisation we have 12 instuctions.
+Here since we used -Ofast optimisation.
 
 ![Screenshot from 2023-08-21 18-04-27](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/71991017-4539-4474-836f-bbf488a258c2)
 
-Here since we used -O1 optimisation we have 15 instuctions.
+Here since we used -O1 optimisation.
 
 ![Screenshot from 2023-08-21 18-14-47](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ec75c287-653f-4348-b371-302021390533)
 
