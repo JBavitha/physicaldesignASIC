@@ -101,6 +101,27 @@ Here since we used -O1 optimisation.
 
 ![Screenshot from 2023-08-21 18-14-47](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ec75c287-653f-4348-b371-302021390533)
 
+## Spike stimulation and debugging
+```spike pk sum1ton.0``` is used check whether the instructions produced are right to give expected output.
+
+![Screenshot from 2023-08-21 17-56-07](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/adb8291e-b655-4174-ad49-31e0992a34bc)
+
+To view the content of the registers 
+
+```spike -d pk sum1ton.o```
+
+![Screenshot from 2023-08-21 18-28-20](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a6715e85-b999-466e-b13d-c84fad3a5b33)
+
+## Integer Number Representation
+
+### Unsigned numbers: 
+- Are just like integers but they don't have a + or - sign associated with them. Range: [0, (2^n)-1 ]
+### Signed numbers: 
+- these are a set of both positive and negative numbers Range : [0, 2^(n-1)-1] to [-1 to 2^(n-1)] To represent negative numbers in binary 2's complement methodology is used.
+
+
+
+
 
 
 
