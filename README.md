@@ -28,3 +28,7 @@ riscv64-unknown-elf-gcc --version
 Application software ---> System software ---> Hardware
 
 This Application Software enters into a block called as System Software and this system software intern converts application program into  binary language.
+- Major components of system sofware are:
+- -- OS(Operating System)
+- -- Compiler
+- --Assembler
