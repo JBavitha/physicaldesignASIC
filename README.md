@@ -121,7 +121,7 @@ To view the content of the registers
 
 ## Labwork
 
-- Write a C program that shows the maximum and minimum values of "n" bit unsigned numbers Considering n=64 here
+- Write a C program that shows the maximum and minimum values of "n" bit unsigned numbers Considering(n=64) here
 
 ```
 #include <stdio.h>
