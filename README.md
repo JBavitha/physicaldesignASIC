@@ -150,7 +150,55 @@ Execution
 ### Introduction to ABI and Basic Verification flow
 
 - An Application Binary Interface (ABI) is a set of rules and conventions that define how binary programs or object code files interact with each other and with the operating system at runtime.
-- ABIs are essential for ensuring compatibility and interoperability between different software components, such as libraries, compilers, and the operating system. 
+- ABIs are essential for ensuring compatibility and interoperability between different software components, such as libraries, compilers, and the operating system.
+
+### Memory Allocation for Double Words
+
+- In computer memory and data storage, the term "double words" is often used to refer to a data type that consists of two words of memory, where each word typically represents a fixed number of bits. This concept is more commonly referred to as a "double word" or "dword." The specific size of a double word can vary depending on the computer architecture and the operating system, but it is typically 32 bits (4 bytes) on many modern systems.
+
+# labwork 
+
+- write c code and assemble code in seperate file.
+C program
+
+```
+#include <stdio.h>
+
+extern int load(int x, int y);
+
+int main()
+{
+  int result = 0;
+  int count = 9;
+  result = load(0x0, count+1);
+  printf("Sum of numbers from 1 to 9 is %d\n", result);
+}
+'''
+Assembly code
+
+```
+.section .text
+.global load
+.type load, @function
+
+load:
+
+add a4, a0, zero
+add a2, a0, a1
+add a3, a0, zero
+
+loop:
+
+add a4, a3, a4
+addi a3, a3, 1
+blt a3, a2, loop
+add a0, a4, zero
+ret
+
+```
+Now simulate c program and assembly code using follwing command
+
+```
 
 
 
