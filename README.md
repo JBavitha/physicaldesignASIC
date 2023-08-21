@@ -40,9 +40,10 @@ This Application Software enters into a block called as System Software and this
 - Multiply Extension(RV64M)
 - Single and Double precision floating point Extension(RV64F and RV64D)
 
-##Labwork
+## Labwork
 Write a program to calculate the sum of numbers from 1 to n
 we write program in leafpad as sum1ton.c
+
 ```#include<stdio.h>
 int main()
 {
