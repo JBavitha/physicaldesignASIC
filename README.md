@@ -45,7 +45,8 @@ Write a program to calculate the sum of numbers from 1 to n
 
 we write program in leafpad as sum1ton.c
 
-```#include<stdio.h>
+```
+#include<stdio.h>
 int main()
 {
 int i,sum=0,n=5;
@@ -55,5 +56,8 @@ sum=sum+i;
 }
 printf("sum of numbers from 1 to %d is %d \n",n,sum);
 return 0;
-}```
+}
+```
+
+file:///home/bavitha/Pictures/Screenshots/Screenshot%20from%202023-08-21%2017-36-51.png
 
