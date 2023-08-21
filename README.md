@@ -58,6 +58,15 @@ printf("sum of numbers from 1 to %d is %d \n",n,sum);
 return 0;
 }
 ```
+![Screenshot from 2023-08-21 17-36-51](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/c0f6639b-05b4-4d1e-996c-d68d4581c782)
 
-file:///home/bavitha/Pictures/Screenshots/Screenshot%20from%202023-08-21%2017-36-51.png
+Compile the code using following command 
+
+```gcc sum1ton.c```
+
+To execute the program 
+
+```./a.out```
+
+
 
