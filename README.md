@@ -159,6 +159,7 @@ Execution
 # labwork 
 
 - write c code and assemble code in seperate file.
+
 C program
 
 ```
@@ -173,7 +174,8 @@ int main()
   result = load(0x0, count+1);
   printf("Sum of numbers from 1 to 9 is %d\n", result);
 }
-'''
+```
+
 Assembly code
 
 ```
@@ -194,13 +196,14 @@ addi a3, a3, 1
 blt a3, a2, loop
 add a0, a4, zero
 ret
-
 ```
+
 Now simulate c program and assembly code using follwing command
 
 ```
 riscv64-unknown-elf-gcc -O1 -mabi=lb64 -march=rv64i -o custom1to9.o custom1to9.c load.S
 ```
+
 ![Screenshot from 2023-08-21 19-00-52](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/9b1ca4a6-250d-4ed8-b94e-bf1310196552)
 
 
