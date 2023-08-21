@@ -32,3 +32,4 @@ This Application Software enters into a block called as System Software and this
   1. OS(Operating System)
   2. Compiler
   3. Assembler
+![Screenshot from 2023-08-21 17-19-03](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/c61ccc96-f3ad-4a8d-842c-0c0d5186eb4d)
