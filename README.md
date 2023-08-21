@@ -199,6 +199,10 @@ ret
 Now simulate c program and assembly code using follwing command
 
 ```
+riscv64-unknown-elf-gcc -O1 -mabi=lb64 -march=rv64i -o custom1to9.o custom1to9.c load.S
+```
+![Screenshot from 2023-08-21 19-00-52](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/9b1ca4a6-250d-4ed8-b94e-bf1310196552)
+
 
 
 
