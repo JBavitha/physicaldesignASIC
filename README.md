@@ -149,6 +149,9 @@ Execution
 
 ### Introduction to ABI and Basic Verification flow
 
+- An Application Binary Interface (ABI) is a set of rules and conventions that define how binary programs or object code files interact with each other and with the operating system at runtime.
+- ABIs are essential for ensuring compatibility and interoperability between different software components, such as libraries, compilers, and the operating system. 
+
 
 
 
