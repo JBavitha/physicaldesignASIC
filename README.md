@@ -12,4 +12,4 @@ https://github.com/kunalg123/riscv_workshop_collaterals/blob/master/run.sh
 riscv64-unknown-elf-gcc --version
 ```
 ## Day 1
-##Introduction to RISC-V ISA and GNU Compiler Chain
+## Introduction to RISC-V ISA and GNU Compiler Chain
