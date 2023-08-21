@@ -1,6 +1,7 @@
 # physicaldesignASIC
 # VLSI Physical Design in ASIC's
 ## Objective
+VLSI ASIC (Very Large Scale Integration Application-Specific Integrated Circuit) design is a complex and intricate process focused on creating custom integrated circuits tailored to specific applications.
 
 
 ## Installation
