@@ -206,6 +206,15 @@ riscv64-unknown-elf-gcc -O1 -mabi=lb64 -march=rv64i -o custom1to9.o custom1to9.c
 
 ![Screenshot from 2023-08-21 19-00-52](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/9b1ca4a6-250d-4ed8-b94e-bf1310196552)
 
+Assembly code 
+
+``` riscv64-unknown-elf-objdump -d custom1to9.o|less```
+
+![Screenshot from 2023-08-21 19-02-34](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/51a60e3d-3943-4a50-9f7d-77cdab704da8)
+
+
+
+
 
 
 
