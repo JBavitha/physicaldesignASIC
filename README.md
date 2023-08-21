@@ -1,7 +1,7 @@
 # physicaldesignASIC
 # VLSI Physical Design in ASIC's
 ## Objective
-VLSI ASIC (Very Large Scale Integration Application-Specific Integrated Circuit) design is a complex and intricate process focused on creating custom integrated circuits tailored to specific applications.
+VLSI ASIC (Very Large Scale Integration Application-Specific Integrated Circuit) design is a complex and intricate process focused on creating custom integrated circuits tailored to specific applications.This involves translating the high-level functional representation of the circuit into a physical implementation that meets design constraints, performance targets, and manufacturability requirements.
 
 
 ## Installation
@@ -16,3 +16,5 @@ riscv64-unknown-elf-gcc --version
 ```
 ## Day 1
 ## Introduction to RISC-V ISA and GNU Compiler Chain
+### ISA(Instruction Set Architecture)
+- Instruction Set Architecture (ISA) is a crucial component of computer architecture that defines the set of instructions that a computer's central processing unit (CPU) can execute. It serves as an interface between the hardware and software, specifying how programs interact with the CPU and memory.
