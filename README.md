@@ -119,6 +119,36 @@ To view the content of the registers
 ### Signed numbers: 
 - these are a set of both positive and negative numbers Range : [0, 2^(n-1)-1] to [-1 to 2^(n-1)] To represent negative numbers in binary 2's complement methodology is used.
 
+## Labwork
+
+- Write a C program that shows the maximum and minimum values of "n" bit unsigned numbers Considering n=64 here
+
+```
+#include <stdio.h>
+#include <math.h>
+int main(){
+  
+	unsigned long long int max = (unsigned long long int) (pow(2,64) -1);
+	unsigned long long int min = (unsigned long long int) (pow(2,64) *(-1));
+	printf("Minimum value is %llu\n",min);
+	printf("Maximum value is %llu\n",max);
+	return 0;
+}
+```
+![Screenshot from 2023-08-21 18-36-34](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/30390269-6a76-4f80-9faa-f8e61ee99117)
+
+Execution 
+
+![Screenshot from 2023-08-21 18-37-47](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/8404c5ee-1143-45fd-a6b1-013407f14dbc)
+
+- Write a C program that shows the maximum and minimum values of "n" bit signed numbers
+
+![Screenshot from 2023-08-21 18-44-27](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a7a98b11-b977-4ab0-9647-c332da4f8732)
+
+
+
+
+
 
 
 
