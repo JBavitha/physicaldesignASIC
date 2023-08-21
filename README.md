@@ -42,6 +42,7 @@ This Application Software enters into a block called as System Software and this
 
 ## Labwork
 Write a program to calculate the sum of numbers from 1 to n
+
 we write program in leafpad as sum1ton.c
 
 ```#include<stdio.h>
