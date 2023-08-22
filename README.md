@@ -143,6 +143,21 @@ Execution
 
 - Write a C program that shows the maximum and minimum values of "n" bit signed numbers
 
+```
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	
+	long long int max = (long long int) (pow(2,63) -1);
+	long long int min = (long long int) (pow(2,63) *(-1));
+	printf("Minimum value is %lld\n",min);
+	printf("Max value is %lld\n",max);
+	return 0;
+}
+```
+
+
 ![Screenshot from 2023-08-21 18-44-27](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a7a98b11-b977-4ab0-9647-c332da4f8732)
 
 ## Day 2
