@@ -62,11 +62,15 @@ return 0;
 
 Compile the code using following command 
 
-```gcc sum1ton.c```
+```
+gcc sum1ton.c
+```
 
 To execute the program 
 
-```./a.out```
+```
+./a.out
+```
 
 ![Screenshot from 2023-08-21 17-44-23](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ac408668-89fe-468f-a574-e6ef1124f352)
 
@@ -74,7 +78,9 @@ To execute the program
 
 Now use riscv gcc compiler to compile the c program 
 
-```riscv64-unknown-elf-gcc -Ofast -mabi=lb64 -march=rv64i -o sum.o sum.c```
+```
+riscv64-unknown-elf-gcc -Ofast -mabi=lb64 -march=rv64i -o sum.o sum.c
+```
 
 ![Screenshot from 2023-08-21 17-50-17](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/4c29c199-e19c-48f9-b85b-d6778dae87c7)
 
@@ -87,7 +93,9 @@ export PATH=~/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-lin
 ```
 To get dissembled ALP code use following command
 
-```riscv64-unknown-elf-objdump -d sum.o | less```
+```
+riscv64-unknown-elf-objdump -d sum.o | less
+```
 
 In order to view any instance section type 
 
@@ -108,7 +116,9 @@ Here since we used -O1 optimisation.
 
 To view the content of the registers 
 
-```spike -d pk sum1ton.o```
+```
+spike -d pk sum1ton.o
+```
 
 ![Screenshot from 2023-08-21 18-28-20](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a6715e85-b999-466e-b13d-c84fad3a5b33)
 
