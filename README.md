@@ -16,8 +16,8 @@ https://github.com/kunalg123/riscv_workshop_collaterals/blob/master/run.sh
 ```
 riscv64-unknown-elf-gcc --version
 ```
-	### End of installation
- </details>
+	
+</details>
 
 ## Day 1
 
@@ -247,10 +247,12 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 ![Screenshot from 2023-08-21 19-02-34](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/51a60e3d-3943-4a50-9f7d-77cdab704da8)
 
 # RTL Design using Verilog with SKY130 Technology
+## Introduction to Open-Source Simulator iVerilog
+
 <details>
-<summary> RTL Design using Verilog with SKY130 Technology </summary>
+<summary> Introduction to iVerilog Design Testbench </summary>
 	
- [Introduction to verilog RTL design and synthesis](#introduction-to-verilog-rtl-design-and-synthesis)
+ 
 - Simulator
 	- Simulator is the tool used for checking any design.
     
@@ -271,10 +273,13 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 ![Screenshot from 2023-08-27 11-38-51](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/32a896ff-fe5e-403b-a979-8bd25da66654)
 - output of the simulator is VCD( value change dump) file
 - we will use the tool called gtkwave to view the waveform
-  ### End of RTL Design using Verilog with SKY130 Technology
+
 </details>
+
 ## Labs using iverilog and gtkwave
-### Introduction to Labs 
+<details>
+<summary> Introduction to Labs  </summary>
+
 
 ![Screenshot from 2023-08-27 13-15-34](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/3555dd4a-88ba-4562-87fa-07aa5de1a2f7)
 
@@ -288,15 +293,22 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 - verilog_files : contains all the verilog source files and testbench files which are required for labs
 
 ![Screenshot from 2023-08-27 13-17-01](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/44785077-0fee-4527-8660-032d27afcfae)
+</details>
 
-###  Introduction iVerilog GTKwave Part-1 
+<details>
+<summary> Introduction iVerilog GTKwave Part-1   </summary>
+
 - To load source code along with testbench code into iverilog simulator use the command ```iverilog good_mux.v tb_good_mux.v```
 - ```a.out``` file gets created to execute that use ```./a.out``` this dumps vcd file.
 - load the vcd file into simulator gtkwave ``` gtkwave tb_good_mux.vcd```
 ![Screenshot from 2023-08-27 13-34-23](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ca98eac1-deaf-4011-802f-5cc60e110369)
 ![Screenshot from 2023-08-27 13-37-26](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/e1fa5f0f-4a61-41fc-bab4-4ca41b01047c)
+</details>
 
-### Introduction iVerilog GTKwave Part-2
+<details>
+<summary> Introduction iVerilog GTKwave Part-2   </summary>
+
+
 - To check the file structure ```gvim tb_good_mux.v -o good_mux.v```
 #### good_mux.v 
 ```
@@ -344,8 +356,13 @@ always #10 i0 = ~i0;
 always #55 i1 = ~i1;
 endmodule
 ```
+</details>
+
 ## Introduction to Yosys and Logic Synthesis
-### Introduction to Yosys 
+
+<details>
+<summary> Introduction to yosys  </summary>
+
 - Synthesizer
   - It is a tool used for converting RTL design code to netlist.
   - Yosys is the synthesizer we use in this course.
@@ -363,7 +380,7 @@ endmodule
 - The vcd file is generated and that is fed to the gtkwave simulator.
 - The output on the simulator must be same as the output observed during RTL simulation.
 - Testbench is same as RTL testbench so there is no need of new testbench.
-  
+</details> 
 
 
 
