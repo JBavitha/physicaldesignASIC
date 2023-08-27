@@ -416,7 +416,7 @@ endmodule
   - To achieve maximum clock frequency(better performance) T_clock should me minimum that means all the delays(T_pd + T_cq + T_setup) must be minimum.
   - To ensure that there are no "HOLD" issues at DFF_B, we need cells that work slowly.
   - Hence we need cells that work fast to meet the required performance and we need cells that work slow to meet HOLD.
-
+</details> 
 <details>
 <summary> Introduction to logic synthesis part-2  </summary>
 
@@ -445,7 +445,7 @@ endmodule
   - More use of slower cells leads to sluggish circuits amd may not meet the performance needs.
   - Hence the guidance is offered to the synthesiser in the form of constraints.
 
-
+</details> 
 
 
 
