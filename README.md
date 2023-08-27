@@ -439,7 +439,7 @@ endmodule
 
 
 
-  ### Selection of the Cells
+### Selection of the Cells
   - We have to guide the Synthesizer to choose the flavour of cells that is optimum for implementation of logic circuit.
   - More use of faster cells leads to bad circuit in terms of power and area and also hold time violations.
   - More use of slower cells leads to sluggish circuits amd may not meet the performance needs.
