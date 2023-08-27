@@ -340,6 +340,9 @@ endmodule
   - It is a tool used for converting RTL design code to netlist.
   - Yosys is the synthesizer we use in this course.
 #### Yosys setup 
+
+![Screenshot from 2023-08-27 14-26-23](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/72a70605-f86d-4e95-ad9d-49db2aee5333)
+
 - Netlist file
   - It is the representation of the design in form of the standard cells in the .lib
 - ```read_verilog``` : used to read design
