@@ -408,7 +408,7 @@ endmodule
       - Fast version.
     - 4 input And gate
 
- - It contains all standard cells to implement any Boolean logic functionalities.
+  - It contains all standard cells to implement any Boolean logic functionalities.
 
 - Why different flavours of gate??
   - Combinational logic determines the maximum speed of operation of the digital logic circuit.
@@ -416,6 +416,36 @@ endmodule
   - To achieve maximum clock frequency(better performance) T_clock should me minimum that means all the delays(T_pd + T_cq + T_setup) must be minimum.
   - To ensure that there are no "HOLD" issues at DFF_B, we need cells that work slowly.
   - Hence we need cells that work fast to meet the required performance and we need cells that work slow to meet HOLD.
+
+<details>
+<summary> Introduction to logic synthesis part-2  </summary>
+
+### Fast cell v/s Slow cells
+
+- Fast Cells
+  - Fast cells use wider transistors to enable higher current carrying capacity.
+  - This allows for quicker charging and discharging of capacitive loads, resulting in faster signal transitions.
+  - Wider transistors generally consume more power compared to narrower ones due to the increased current flow and larger gate capacitance.
+  - While faster cells offer improved performance, they might have larger silicon area requirements due to the increased number of transistors. Additionally, they might be more susceptible to issues like noise and power consumption.
+
+    
+- Slow Cells
+  - Slow cells use narrower transistors to reduce power consumption and minimize power dissipation.
+  - Narrower transistors consume less power due to their lower current carrying capacity and reduced gate capacitance.
+  - While slower cells consume less power, they might operate at lower clock frequencies and have longer signal propagation delays.
+  - This can impact their ability to process data quickly.
+
+
+
+
+
+  ### Selection of the Cells
+  - We have to guide the Synthesizer to choose the flavour of cells that is optimum for implementation of logic circuit.
+  - More use of faster cells leads to bad circuit in terms of power and area and also hold time violations.
+  - More use of slower cells leads to sluggish circuits amd may not meet the performance needs.
+  - Hence the guidance is offered to the synthesiser in the form of constraints.
+
+
 
 
 
