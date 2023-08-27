@@ -391,6 +391,7 @@ endmodule
   - RTL to Gate level translation.
   - The design is converted into gates and the connections are made between the gates.
   - This is given out as a file called netlist.
+
 ![Screenshot from 2023-08-27 20-25-03](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/af88a5ce-fdc3-4d7a-ac7d-7c660e0e7599)
 
 - .lib
