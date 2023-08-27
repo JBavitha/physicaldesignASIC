@@ -353,6 +353,7 @@ endmodule
 - The vcd file is generated and that is fed to the gtkwave simulator.
 - The output on the simulator must be same as the output observed during RTL simulation.
 - Testbench is same as RTL testbench so there is no need of new testbench.
+  
 
 
 
