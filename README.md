@@ -244,7 +244,7 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 ## Introduction to verilog RTL design and synthesis 
 
 - Simulator
-- - Simulator is the tool used for checking any design
+  - Simulator is the tool used for checking any design
 
 
 
