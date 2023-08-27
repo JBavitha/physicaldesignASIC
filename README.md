@@ -19,7 +19,6 @@ riscv64-unknown-elf-gcc --version
 	### End of installation
  </details>
 
-# TABLE OF CONTENTS
 ## Day 1
 
 + [ISA(Instruction Set Architecture)](#Instruction-Set_Architecture)
@@ -248,11 +247,12 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 ![Screenshot from 2023-08-21 19-02-34](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/51a60e3d-3943-4a50-9f7d-77cdab704da8)
 
 # RTL Design using Verilog with SKY130 Technology
-
-## Introduction to verilog RTL design and synthesis 
-
+<details>
+<summary> RTL Design using Verilog with SKY130 Technology </summary>
+	
+ [Introduction to verilog RTL design and synthesis](#introduction-to-verilog-rtl-design-and-synthesis)
 - Simulator
-  - Simulator is the tool used for checking any design.
+	- Simulator is the tool used for checking any design.
     
 - Design
   - Design is actual verilog code or set of verilog codes which has intended functionality to meet with the required specifications.
@@ -271,6 +271,8 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 ![Screenshot from 2023-08-27 11-38-51](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/32a896ff-fe5e-403b-a979-8bd25da66654)
 - output of the simulator is VCD( value change dump) file
 - we will use the tool called gtkwave to view the waveform
+  ### End of RTL Design using Verilog with SKY130 Technology
+</details>
 ## Labs using iverilog and gtkwave
 ### Introduction to Labs 
 
