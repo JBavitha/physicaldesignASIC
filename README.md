@@ -382,7 +382,8 @@ endmodule
 - Testbench is same as RTL testbench so there is no need of new testbench.
 </details> 
 
-
+<details>
+<summary> Introduction to logic synthesis part-1  </summary>
 
 
 
