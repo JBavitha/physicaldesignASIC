@@ -266,12 +266,30 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 ## Labs using iverilog and gtkwave
 ### Introduction to Labs 
 
-![Screenshot from 2023-08-27 12-36-46](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/4cee4f59-50da-4b20-a9d5-14c2d3c873d8)
+![Screenshot from 2023-08-27 13-15-34](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/3555dd4a-88ba-4562-87fa-07aa5de1a2f7)
+
 
 - make directory named vsd
   - ```mkdir vsd```
   - ```cd vsd```
 - use the command ```git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git``` which helps in creating a folder ```sky130RTLDesignAndSynthesisWorkshop```
+- All library files are stored in ```my_lib```
+- verilog_model : contains all the standard cell verilog modules of the standard cells contained in the .lib
+- verilog_files : contains all the verilog source files and testbench files which are required for labs
+
+![Screenshot from 2023-08-27 13-17-01](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/44785077-0fee-4527-8660-032d27afcfae)
+
+###  Introduction iVerilog GTKwave Part-1 
+- To load source code along with testbench code into iverilog simulator use the command ```iverilog good_mux.v tb_good_mux.v```
+- ```a.out``` file gets created to execute that use ```./a.out``` this dumps vcd file.
+- load the vcd file into simulator gtkwave ``` gtkwave tb_good_mux.vcd```
+![Screenshot from 2023-08-27 13-34-23](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ca98eac1-deaf-4011-802f-5cc60e110369)
+![Screenshot from 2023-08-27 13-35-15](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/3058a0fc-70da-413d-b4f1-c5952b8ef49b)
+
+
+
+
+
 
 
 
