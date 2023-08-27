@@ -408,8 +408,14 @@ endmodule
       - Fast version.
     - 4 input And gate
 
+ - It contains all standard cells to implement any Boolean logic functionalities.
 
-
+- Why different flavours of gate??
+  - Combinational logic determines the maximum speed of operation of the digital logic circuit.
+  - T_clock > T_pd + T_cq + T_setup
+  - To achieve maximum clock frequency(better performance) T_clock should me minimum that means all the delays(T_pd + T_cq + T_setup) must be minimum.
+  - To ensure that there are no "HOLD" issues at DFF_B, we need cells that work slowly.
+  - Hence we need cells that work fast to meet the required performance and we need cells that work slow to meet HOLD.
 
 
 
