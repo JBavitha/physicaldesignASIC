@@ -239,6 +239,14 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 
 ![Screenshot from 2023-08-21 19-02-34](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/51a60e3d-3943-4a50-9f7d-77cdab704da8)
 
+# RTL Design using Verilog with SKY130 Technology
+
+## Introduction to verilog RTL design and synthesis 
+
+- Simulator
+- - Simulator is the tool used for checking any design
+
+
 
 
 
