@@ -336,6 +336,16 @@ endmodule
 ```
 ## Introduction to Yosys and Logic Synthesis
 ### Introduction to Yosys 
+- Synthesizer
+  - It is a tool used for converting RTL design code to netlist.
+  - Yosys is the synthesizer we use in this course.
+#### Yosys setup 
+- Netlist file
+  - It is the representation of the design in form of the standard cells in the .lib
+- ```read_verilog``` : used to read design
+- ```read_liberty``` : used to read .lib
+- ```write_verilog``` : used to write out the netlist file
+
 
 
 
