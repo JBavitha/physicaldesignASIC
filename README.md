@@ -286,6 +286,56 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 ![Screenshot from 2023-08-27 13-34-23](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ca98eac1-deaf-4011-802f-5cc60e110369)
 ![Screenshot from 2023-08-27 13-37-26](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/e1fa5f0f-4a61-41fc-bab4-4ca41b01047c)
 
+### Introduction iVerilog GTKwave Part-2
+- To check the file structure ```gvim tb_good_mux.v -o good_mux.v```
+#### good_mux.v 
+```
+module good_mux (input i0 , input i1 , input sel , output reg y);
+always @ (*)
+begin
+	if(sel)
+		y <= i1;
+	else 
+		y <= i0;
+end
+endmodule
+
+```
+#### tb_good_mux.v
+
+```
+`timescale 1ns / 1ps
+module tb_good_mux;
+	// Inputs
+	reg i0,i1,sel;
+	// Outputs
+	wire y;
+
+        // Instantiate the Unit Under Test (UUT)
+	good_mux uut (
+		.sel(sel),
+		.i0(i0),
+		.i1(i1),
+		.y(y)
+	);
+
+	initial begin
+	$dumpfile("tb_good_mux.vcd");
+	$dumpvars(0,tb_good_mux);
+	// Initialize Inputs
+	sel = 0;
+	i0 = 0;
+	i1 = 0;
+	#300 $finish;
+	end
+
+always #75 sel = ~sel;
+always #10 i0 = ~i0;
+always #55 i1 = ~i1;
+endmodule
+```
+
+
 
 
 
