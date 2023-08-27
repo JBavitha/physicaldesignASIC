@@ -261,6 +261,10 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 ### Iverilog based Simulation Flow 
 
 ![Screenshot from 2023-08-27 11-38-51](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/32a896ff-fe5e-403b-a979-8bd25da66654)
+- output of the simulator is VCD( value change dump) file
+- we will use the tool called gtkwave to view the waveform
+## Labs using iverilog and gtkwave
+
 
 
  
