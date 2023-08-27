@@ -264,6 +264,15 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 - output of the simulator is VCD( value change dump) file
 - we will use the tool called gtkwave to view the waveform
 ## Labs using iverilog and gtkwave
+### Introduction to Labs 
+
+![Screenshot from 2023-08-27 12-36-46](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/4cee4f59-50da-4b20-a9d5-14c2d3c873d8)
+
+- make directory named vsd
+  - ```mkdir vsd```
+  - ```cd vsd```
+- use the command ```git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git``` which helps in creating a folder ```sky130RTLDesignAndSynthesisWorkshop```
+
 
 
 
