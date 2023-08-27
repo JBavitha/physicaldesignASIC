@@ -12,8 +12,9 @@ https://github.com/kunalg123/riscv_workshop_collaterals/blob/master/run.sh
 
 - If you get as above after running the below command,RISCV GNU toolchain is succesfully installed.
 ```
-riscv64-unknown-elf-gcc --version
+riscv64-unknown-elf-gcc --version	
 ```
+# TABLE OF CONTENTS
 ## Day 1
 **Introduction to RISC-V ISA and GNU Compiler Chain**
 + [ISA(Instruction Set Architecture)](#ISA(Instruction Set Architecture)
