@@ -284,9 +284,7 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 - ```a.out``` file gets created to execute that use ```./a.out``` this dumps vcd file.
 - load the vcd file into simulator gtkwave ``` gtkwave tb_good_mux.vcd```
 ![Screenshot from 2023-08-27 13-34-23](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ca98eac1-deaf-4011-802f-5cc60e110369)
-![Screenshot from 2023-08-27 13-35-15](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/3058a0fc-70da-413d-b4f1-c5952b8ef49b)
-
-
+![Screenshot from 2023-08-27 13-37-26](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/e1fa5f0f-4a61-41fc-bab4-4ca41b01047c)
 
 
 
