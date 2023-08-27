@@ -255,6 +255,14 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 - Upon change to the input the output is evaluated
   - If no change to the input, no change to the output!
 - Simulator is looking for change in the values of input!
+
+![Screenshot from 2023-08-27 11-37-02](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ac08a7ba-66f1-416f-8f99-e7b4e2a56b2a)
+
+### Iverilog based Simulation Flow 
+
+![Screenshot from 2023-08-27 11-38-51](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/32a896ff-fe5e-403b-a979-8bd25da66654)
+
+
  
 
 
