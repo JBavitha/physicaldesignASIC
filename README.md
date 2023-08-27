@@ -16,6 +16,7 @@ riscv64-unknown-elf-gcc --version
 ```
 ## Day 1
 ## Introduction to RISC-V ISA and GNU Compiler Chain
+<summary>Click to view</summary>
 ### ISA(Instruction Set Architecture)
 - Instruction Set Architecture (ISA) is a crucial component of computer architecture that defines the set of instructions that a computer's central processing unit (CPU) can execute. It serves as an interface between the hardware and software, specifying how programs interact with the CPU and memory.
 - It provides a stable interface for software programmers, allowing them to write code that can run on various CPUs with the same ISA.
