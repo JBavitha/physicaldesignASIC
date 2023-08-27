@@ -244,8 +244,18 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 ## Introduction to verilog RTL design and synthesis 
 
 - Simulator
-  - Simulator is the tool used for checking any design
-
+  - Simulator is the tool used for checking any design.
+    
+- Design
+  - Design is actual verilog code or set of verilog codes which has intended functionality to meet with the required specifications.
+- Testbench
+  - This is the setup to apply stimulus (test_vectors) to the design to check its funtionality
+### How simulator works?
+- Simulator looks for the changes on the input signals
+- Upon change to the input the output is evaluated
+  - If no change to the input, no change to the output!
+- Simulator is looking for change in the values of input!
+ 
 
 
 
