@@ -1,4 +1,4 @@
-# physicaldesignASIC
+![Screenshot from 2023-08-28 23-56-04](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/34fad1cd-29e2-40ab-b7b4-e93cbed9c5ea)# physicaldesignASIC
 # VLSI Physical Design in ASIC's
 ## Objective
 VLSI ASIC (Very Large Scale Integration Application-Specific Integrated Circuit) design is a complex and intricate process focused on creating custom integrated circuits tailored to specific applications.This involves translating the high-level functional representation of the circuit into a physical implementation that meets design constraints, performance targets, and manufacturability requirements.
@@ -468,7 +468,8 @@ sudo make install
 - To invoke yosys
 ``` cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files ```
 Type yosys
-![Uploading Screenshot from 2023-08-28 23-24-00.png…]()
+![Screenshot from 2023-08-28 23-24-00](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/f07fcfc7-f1e6-4c9a-8012-22a875097845)
+
 
 - To read the library
 
@@ -478,9 +479,22 @@ Type yosys
 
 ``` read_verilog good_mux.v```
 
+
+
+![Screenshot from 2023-08-28 23-56-04](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/3a177cf7-d83b-4fff-a597-d3e959085eba)
+
 - To syntheis the module
 
  ``` synth -top good_mux ```
+
+![Screenshot from 2023-08-28 23-58-39](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/b5fc27f3-553d-4267-a16a-fe36a1c8f796)
+
+- For realizing the logic in the verilog file 
+``` abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
+![Screenshot from 2023-08-29 00-00-24](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/48f6790c-0fbb-45cb-9a48-064b7e2f7939)
+
+
+ 
 
 
 
