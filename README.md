@@ -492,6 +492,27 @@ Type yosys
 - For realizing the logic in the verilog file 
 ``` abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
 ![Screenshot from 2023-08-29 00-00-24](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/48f6790c-0fbb-45cb-9a48-064b7e2f7939)
+- For logic realization ``` show ```
+  - The mux is completely realised in the form of sky130 library cells. 
+![Screenshot from 2023-08-29 00-04-24](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/d86a9f86-82fd-488c-9a02-452a6b4185f3)
+
+- To write netlist
+```
+write_verilog good_mux_netlist.v
+!gvim good_mux_netlist.v
+```
+![Screenshot from 2023-08-29 00-09-16](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/600ef5ba-e540-43aa-9a46-31f2ba8cddbb)
+![Screenshot from 2023-08-29 00-07-45](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/8c8cbcf2-3442-463b-becd-b22648ffc8ef)
+- To view simplified code
+```
+write_verilog -noattr good_mux_netlist.v
+!gvim good_mux_netlist.v
+```
+![Screenshot from 2023-08-29 00-12-39](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/83d6e53a-2e01-42d9-9c70-7ee853ef23c9)
+
+
+
+
 
 
  
