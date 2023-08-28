@@ -5,6 +5,7 @@ VLSI ASIC (Very Large Scale Integration Application-Specific Integrated Circuit)
 
 
 ## Installation
+
 <details>
 
 <summary> Execute run.sh in the below github file </summary>
@@ -20,6 +21,7 @@ riscv64-unknown-elf-gcc --version
 </details>
 
 ## Day 1
+
 <details>
 
 <summary> ISA(Instruction Set Architecture)</summary>
@@ -27,6 +29,7 @@ riscv64-unknown-elf-gcc --version
 - Instruction Set Architecture (ISA) is a crucial component of computer architecture that defines the set of instructions that a computer's central processing unit (CPU) can execute. It serves as an interface between the hardware and software, specifying how programs interact with the CPU and memory.
 - It provides a stable interface for software programmers, allowing them to write code that can run on various CPUs with the same ISA.
 - At the same time, hardware designers have the flexibility to implement the ISA in different ways, optimizing for factors like speed, power efficiency, and cost.
+
 </details>
 
 <details>
@@ -35,6 +38,7 @@ riscv64-unknown-elf-gcc --version
 
 - Open Standard: RISC-V is an open standard ISA, which means that its specifications are freely available to the public. This openness encourages collaboration, innovation, and the development of a wide range of processors by various organizations and individuals.
 - Simplicity: RISC-V follows the RISC philosophy of simplicity and orthogonality. It has a relatively small number of instructions with a regular encoding format, making it easier to design and optimize processors.
+
 </details>
 
 <details>
@@ -55,8 +59,12 @@ This Application Software enters into a block called as System Software and this
 - Base Integer Instructions(RV64I)
 - Multiply Extension(RV64M)
 - Single and Double precision floating point Extension(RV64F and RV64D)
+</details>
 
-## Labwork
+<details>
+
+<summary> Labwork </summary> 
+
 Write a program to calculate the sum of numbers from 1 to n
 
 we write program in leafpad as sum1ton.c
@@ -89,8 +97,11 @@ To execute the program
 ```
 
 ![Screenshot from 2023-08-21 17-44-23](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ac408668-89fe-468f-a574-e6ef1124f352)
+</details>
+<details>
 
-## RISCV GCC Compiler and Dissemble
+<summary> RISCV GCC Compiler and Dissemble </summary> 
+
 
 Now use riscv gcc compiler to compile the c program 
 
@@ -124,8 +135,11 @@ Here since we used -Ofast optimisation.
 Here since we used -O1 optimisation.
 
 ![Screenshot from 2023-08-21 18-14-47](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ec75c287-653f-4348-b371-302021390533)
+</details>
+<details>
 
-## Spike stimulation and debugging
+<summary> Spike stimulation and debugging </summary> 
+
 ```spike pk sum1ton.0``` is used check whether the instructions produced are right to give expected output.
 
 ![Screenshot from 2023-08-21 17-56-07](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/adb8291e-b655-4174-ad49-31e0992a34bc)
@@ -137,15 +151,21 @@ spike -d pk sum1ton.o
 ```
 
 ![Screenshot from 2023-08-21 18-28-20](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a6715e85-b999-466e-b13d-c84fad3a5b33)
+</details>
+<details>
 
-## Integer Number Representation
+<summary> Integer Number Representation </summary>
+
 
 ### Unsigned numbers: 
 - Are just like integers but they don't have a + or - sign associated with them. Range: [0, (2^n)-1 ]
 ### Signed numbers: 
 - these are a set of both positive and negative numbers Range : [0, 2^(n-1)-1] to [-1 to 2^(n-1)] To represent negative numbers in binary 2's complement methodology is used.
+</details>
+<details>
 
-## Labwork
+<summary> Labwork </summary>
+
 
 - Write a C program that shows the maximum and minimum values of "n" bit unsigned numbers Considering(n=64) here
 
@@ -185,6 +205,7 @@ int main(){
 
 
 ![Screenshot from 2023-08-21 18-44-27](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a7a98b11-b977-4ab0-9647-c332da4f8732)
+</details>
 
 ## Day 2
 
