@@ -508,7 +508,17 @@ write_verilog good_mux_netlist.v
 write_verilog -noattr good_mux_netlist.v
 !gvim good_mux_netlist.v
 ```
+![Screenshot from 2023-08-29 00-14-27](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/74121b14-fbc7-433a-b963-9cb6391283fd)
+
 ![Screenshot from 2023-08-29 00-12-39](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/83d6e53a-2e01-42d9-9c70-7ee853ef23c9)
+
+</details> 
+
+## Timing libs, Hierarchial and flat synthesis, and efficient flop coding styles.
+### Introduction to timing .libs
+
+<details>
+<summary> Introduction to Dot Lib </summary>
 
 
 
