@@ -1,4 +1,4 @@
-![Screenshot from 2023-08-28 23-56-04](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/34fad1cd-29e2-40ab-b7b4-e93cbed9c5ea)# physicaldesignASIC
+# physicaldesignASIC
 # VLSI Physical Design in ASIC's
 ## Objective
 VLSI ASIC (Very Large Scale Integration Application-Specific Integrated Circuit) design is a complex and intricate process focused on creating custom integrated circuits tailored to specific applications.This involves translating the high-level functional representation of the circuit into a physical implementation that meets design constraints, performance targets, and manufacturability requirements.
