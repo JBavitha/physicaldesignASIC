@@ -559,8 +559,9 @@ write_verilog -noattr good_mux_netlist.v
 <summary> Introduction to Dot Lib </summary>
 
 - To view the contents in the .lib
+ ``` gvim ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib ```
 
-``` gvim ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib ```
+
 ![Screenshot from 2023-08-29 00-47-33](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/66811173-1c83-404f-ab0c-7f29e3e87db5)
 
 - First line ```library ("sky130_fd_sc_hd__tt_025C_1v80") ``` tells the name of the library.
