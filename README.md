@@ -179,16 +179,23 @@ int main(){
 
 ## Day 2
 
-### Introduction to ABI and Basic Verification flow
+<details>
+<summary> Introduction to ABI and Basic Verification flow </summary>
+
 
 - An Application Binary Interface (ABI) is a set of rules and conventions that define how binary programs or object code files interact with each other and with the operating system at runtime.
 - ABIs are essential for ensuring compatibility and interoperability between different software components, such as libraries, compilers, and the operating system.
+</details>
+<details>
+<summary> Memory Allocation for Double Words </summary>
 
-### Memory Allocation for Double Words
 
 - In computer memory and data storage, the term "double words" is often used to refer to a data type that consists of two words of memory, where each word typically represents a fixed number of bits. This concept is more commonly referred to as a "double word" or "dword." The specific size of a double word can vary depending on the computer architecture and the operating system, but it is typically 32 bits (4 bytes) on many modern systems.
+</details>
 
-# labwork 
+<details>
+<summary> Labwork </summary>
+
 
 - write c code and assemble code in seperate file.
 
@@ -245,7 +252,7 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 ```
 
 ![Screenshot from 2023-08-21 19-02-34](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/51a60e3d-3943-4a50-9f7d-77cdab704da8)
-
+</details>
 # RTL Design using Verilog with SKY130 Technology
 ## Introduction to Open-Source Simulator iVerilog
 
