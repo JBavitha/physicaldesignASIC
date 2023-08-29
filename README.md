@@ -612,13 +612,19 @@ show multiple_modules
   yosys
   read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
   read_verilog multiple_modules.v
-  synth -top multiple_modules to set it as top module
+  synth -top multiple_modules
   abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
   flatten
   show
   ```
  
-  
+ ![Screenshot from 2023-08-29 19-33-17](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/36c5b451-2266-4f4b-8028-fde1c41cf6bc)
+ 
+- ```
+  write_verilog -noattr multiple_modules_flat.v
+  !gvim multiple_modules_flat.v
+  ```
+![Screenshot from 2023-08-29 19-35-33](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/0ad1a0fb-fa96-45af-bff7-4f5c8dda7450)
 
 
 
