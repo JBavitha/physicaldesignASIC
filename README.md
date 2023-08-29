@@ -574,11 +574,15 @@ write_verilog -noattr good_mux_netlist.v
 
 <details>
 <summary> Hierarchical Synthesis Flat Synthesis  </summary>
+
 ``` 
 cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
 gvim multiple_modules.v
-```
-![Screenshot from 2023-08-29 16-34-21](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/902cceac-f5c4-4e36-b8c1-0838ea6c6f9d)
+
+``
+
+![Screenshot from 2023-08-29 16-34-21](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/6b28aa5f-9a46-4746-b490-1a6367c28c30)
+
 
 ```
 yosys
