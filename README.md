@@ -594,9 +594,29 @@ show multiple_modules
 
 ![image](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/5869bb16-ac9f-4b2e-ac40-0af8aa1b8ef4)
 
+![Screenshot from 2023-08-29 19-08-39](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/acd9060f-a507-4c11-a4cd-56d44841ea39)
+
+- To show multiple modules ``` show multiple_modules ```
+
+![Screenshot from 2023-08-29 16-43-08](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/9294542b-5616-4676-b810-3d08090b598e)
+
+- ```
+  
+    write_verilog -noattr multiple_modules_hier.v
+    !gvim multiple_modules_hier.v
+  ```
+![Screenshot from 2023-08-29 19-15-19](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/daefa8e2-6ff4-4042-b59f-a6f7d50d910a)
 
 
-
+- ```
+  yosys
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  read_verilog multiple_modules.v
+  synth -top multiple_modules to set it as top module
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  flatten
+  show
+  ```
  
   
 
