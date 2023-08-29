@@ -575,6 +575,8 @@ write_verilog -noattr good_mux_netlist.v
 <details>
 <summary> Hierarchical Synthesis Flat Synthesis  </summary>
 
+#### Hierarchical Synthesis
+
 ``` 
 cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
 gvim multiple_modules.v
@@ -608,6 +610,8 @@ show multiple_modules
 ![Screenshot from 2023-08-29 19-15-19](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/daefa8e2-6ff4-4042-b59f-a6f7d50d910a)
 
 
+#### Flattened Synthesis
+
 - ```
   yosys
   read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
@@ -625,6 +629,16 @@ show multiple_modules
   !gvim multiple_modules_flat.v
   ```
 ![Screenshot from 2023-08-29 19-35-33](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/0ad1a0fb-fa96-45af-bff7-4f5c8dda7450)
+
+- In flattened synthesis we can see the complete structure which we cannot in hierarchial synthesis.
+
+</details>
+
+### Various Flop Coding Styles and Optimization
+
+<details>
+<summary> Why Flops and Flop Coding Styles  </summary>
+
 
 
 
