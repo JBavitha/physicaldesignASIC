@@ -578,8 +578,7 @@ write_verilog -noattr good_mux_netlist.v
 ``` 
 cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
 gvim multiple_modules.v
-
-``
+```
 
 ![Screenshot from 2023-08-29 16-34-21](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/6b28aa5f-9a46-4746-b490-1a6367c28c30)
 
@@ -591,8 +590,8 @@ read_verilog multiple_modules.v
 synth -top multiple_modules
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show multiple_modules
-
 ```
+
 ![image](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/5869bb16-ac9f-4b2e-ac40-0af8aa1b8ef4)
 
 
