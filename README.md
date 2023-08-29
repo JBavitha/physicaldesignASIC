@@ -568,6 +568,33 @@ write_verilog -noattr good_mux_netlist.v
 - tt indicates typical type
 - 025C indicates the temperature
 - Process, Voltage ,Temperature are the three important parameters for design to work and it tells how my silicon work.
+</details>
+
+### Hierarchical vs Flat Synthesis
+
+<details>
+<summary> Hierarchical Synthesis Flat Synthesis  </summary>
+``` 
+cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+gvim multiple_modules.v
+```
+![Screenshot from 2023-08-29 16-34-21](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/902cceac-f5c4-4e36-b8c1-0838ea6c6f9d)
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog multiple_modules.v
+synth -top multiple_modules
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show multiple_modules
+
+```
+![image](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/5869bb16-ac9f-4b2e-ac40-0af8aa1b8ef4)
+
+
+
+
+ 
   
 
 
