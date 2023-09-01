@@ -298,7 +298,7 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
   - Design is actual verilog code or set of verilog codes which has intended functionality to meet with the required specifications.
 - Testbench
   - This is the setup to apply stimulus (test_vectors) to the design to check its funtionality
-### How simulator works?
+#### How simulator works?
 - Simulator looks for the changes on the input signals
 - Upon change to the input the output is evaluated
   - If no change to the input, no change to the output!
@@ -306,7 +306,7 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 
 ![Screenshot from 2023-08-27 11-37-02](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ac08a7ba-66f1-416f-8f99-e7b4e2a56b2a)
 
-### Iverilog based Simulation Flow 
+#### Iverilog based Simulation Flow 
 
 ![Screenshot from 2023-08-27 11-38-51](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/32a896ff-fe5e-403b-a979-8bd25da66654)
 - output of the simulator is VCD( value change dump) file
@@ -314,7 +314,7 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 
 </details>
 
-## Labs using iverilog and gtkwave
+### Labs using iverilog and gtkwave
 <details>
 <summary> Introduction to Labs  </summary>
 
@@ -396,7 +396,7 @@ endmodule
 ```
 </details>
 
-## Introduction to Yosys and Logic Synthesis
+### Introduction to Yosys and Logic Synthesis
 
 <details>
 <summary> Introduction to yosys  </summary>
@@ -458,7 +458,7 @@ endmodule
 <details>
 <summary> Introduction to logic synthesis part-2  </summary>
 
-### Fast cell v/s Slow cells
+#### Fast cell v/s Slow cells
 
 - Fast Cells
   - Fast cells use wider transistors to enable higher current carrying capacity.
@@ -477,7 +477,7 @@ endmodule
 
 
 
-### Selection of the Cells
+#### Selection of the Cells
   - We have to guide the Synthesizer to choose the flavour of cells that is optimum for implementation of logic circuit.
   - More use of faster cells leads to bad circuit in terms of power and area and also hold time violations.
   - More use of slower cells leads to sluggish circuits amd may not meet the performance needs.
@@ -485,7 +485,7 @@ endmodule
 
 </details> 
 
-## Labs using Yosys and Sky130 PDKs
+### Labs using Yosys and Sky130 PDKs
 
 
 <details>
