@@ -552,7 +552,7 @@ write_verilog -noattr good_mux_netlist.v
 
 </details> 
 
-## Timing libs, Hierarchial and flat synthesis, and efficient flop coding styles.
+## DAY4 - Timing libs, Hierarchial and flat synthesis, and efficient flop coding styles.
 ### Introduction to timing .libs
 
 <details>
@@ -847,7 +847,7 @@ write_verilog -noattr mult8_netlist.v
 
 </details>
 
-## Combinational and Sequential Optimisations
+## DAY5 - Combinational and Sequential Optimisations
 
 ### Introduction to Optimisations
 
