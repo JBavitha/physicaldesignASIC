@@ -664,7 +664,8 @@ show multiple_modules
 - When a clock edge occurs (as determined by the clock signal), the D input is latched into the flip-flop, and its output Q takes on the value of D.
 - However, if the asynchronous reset signal (R) is asserted (set to 1), it overrides the clocked behavior and immediately sets Q to 0, irrespective of the D input or clock edge.
 
-```gvim dff_asyncres.v``
+```gvim dff_asyncres.v```
+
 ![Screenshot from 2023-09-01 10-57-36](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/50b6ffa3-0f50-4651-bab3-3f5e6b2cd9fd)
 
 
@@ -699,6 +700,19 @@ show multiple_modules
 <summary> Lab Flop Synthesis Simulations </summary>
 
 #### D Flip-Flop with Asynchronous Reset
+
+- Simulation
+  ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+  iverilog dff_asyncres.v tb_dff_asyncres.v
+  ./a.out
+  gtkwave tb_dff_asyncres.vcd
+
+  ```
+![Screenshot from 2023-09-01 11-20-15](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/6f2dcd88-67e8-4038-91de-892365b77f9d)
+
+
+
 
 
 
