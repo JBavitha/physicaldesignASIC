@@ -734,14 +734,61 @@ show multiple_modules
 
   ```
 ![Screenshot from 2023-09-01 21-21-30](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/8549d251-db5c-495f-a5f6-241182260288)
- 
 
+#### Synthesis 
+- D Flip-Flop with Asynchronous Reset
+```
+cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
 
+yosys
 
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
+read_verilog dff_asyncres.v
 
+synth -top dff_asyncres
 
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+show
+
+```
+![Screenshot from 2023-09-01 21-28-46](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/b9dbe24b-4a6a-44cd-b992-10347e5654b8)
+
+- D Flip_Flop with Asynchronous Set
+```
+cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_async_set.v
+synth -top dff_async_set
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+
+```
+![Screenshot from 2023-09-01 21-34-18](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/7371156f-ae27-4d77-bce0-7240da3319c8)
+
+- D Flip-Flop with Synchronous Reset
+```
+cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog dff_syncres.v
+synth -top dff_syncres
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+
+```
+![Screenshot from 2023-09-01 22-11-14](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/46be5ce7-a035-4ccc-b9f7-e86449ad56de)
+
+</details>
+
+<details>
+<summary> Optimisations  </summary>
 
 
 
