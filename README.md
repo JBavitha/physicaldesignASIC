@@ -711,11 +711,29 @@ show multiple_modules
   ```
 ![Screenshot from 2023-09-01 11-20-15](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/6f2dcd88-67e8-4038-91de-892365b77f9d)
 
+#### D Flip_Flop with Asynchronous Set
 
+- Simulation
+  ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+  iverilog dff_async_set.v tb_dff_async_set.v
+  ./a.out
+  gtkwave tb_dff_async_set.vcd
 
+  ```
+![Screenshot from 2023-09-01 21-10-24](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/afa07b93-a11b-4fd8-b47c-08a210f58c77)
+  
+#### D Flip-Flop with Synchronous Reset
 
+- simulation
+  ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+  iverilog dff_syncres.v tb_dff_syncres.v
+  ./a.out
+  gtkwave tb_dff_syncres.vcd
 
-
+  ```
+![Screenshot from 2023-09-01 21-21-30](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/8549d251-db5c-495f-a5f6-241182260288)
  
 
 
