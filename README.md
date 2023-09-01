@@ -639,12 +639,66 @@ show multiple_modules
 <details>
 <summary> Why Flops and Flop Coding Styles  </summary>
 
+#### Glitch
+- A glitch is a momentary and unwanted voltage or logic level transition in a digital circuit that occurs outside the expected or specified timing requirements.
+- Glitches can occur due to various reasons, including propagation delays, race conditions, improper signal timing, or metastability issues.
+- Inorder to avoid glitch we use flops.
+
+#### Flops
+
+- Flip-flops are bistable multivibrators that store a single binary bit (0 or 1).
+- They are used to store and synchronize data in digital circuits.
+- ```Sequential Logic``` : Flip-flops are commonly used in sequential logic circuits to store the state information. They are the memory elements of a digital system.
+- ```Clocking Mechanism``` : Flip-flops are edge-triggered, which means they change their output only on the rising or falling edge of a clock signal. This property ensures synchronization and avoids timing hazards.
+- ```Types``` : There are different types of flip-flops, including D flip-flops, JK flip-flops, T flip-flops, and SR flip-flops, each with its unique characteristics and use cases.
+
+#### Flop Coding Styles:
+
+- Synchronous Design: In synchronous digital design, flip-flops are controlled by a clock signal. The design follows a clocking methodology, where all operations occur at specific clock edges, ensuring synchronization and predictability.
+- Asynchronous Design: In asynchronous digital design, flip-flops may not rely on a common clock signal. Signals change as their inputs change, making timing analysis more complex and potentially leading to glitches and hazards.
+- Coding Conventions: Depending on the coding style, designers may use different coding conventions and techniques for implementing flip-flops in digital circuits. These conventions help ensure proper functionality and timing.
+
+#### D Flip-Flop with Asynchronous Reset
+
+- Why asynchronous is because it does not look for any clock.
+- When a clock edge occurs (as determined by the clock signal), the D input is latched into the flip-flop, and its output Q takes on the value of D.
+- However, if the asynchronous reset signal (R) is asserted (set to 1), it overrides the clocked behavior and immediately sets Q to 0, irrespective of the D input or clock edge.
+
+```gvim dff_asyncres_syncres.v```
+![Screenshot from 2023-09-01 10-23-32](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/e24e936b-51e9-41dd-a809-a16ba3e3e1a3)
 
 
+#### D Flip_Flop with Asynchronous Set
 
+- When a clock edge occurs (as determined by the clock signal), the D input is latched into the flip-flop, and its output Q takes on the value of D.
+- However, if the asynchronous set signal (S) is asserted (set to 1), it overrides the clocked behavior and immediately sets Q to 1, irrespective of the D input or clock edge.
 
+```gvim dff_async_set.v```
+![Screenshot from 2023-09-01 10-34-26](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/7b7a8ef1-bcea-46b5-a2a6-0a1b0e2ee350)
+
+#### D Flip-Flop with Synchronous Reset
+
+- Synchronous reset resets the flip-flop's state only on a specific clock edge.
+- When the clock edge occurs (as determined by the CLK signal), the D input is latched into the flip-flop, and its output Q takes on the value of D.
+- However, the synchronous reset signal (R) is considered synchronous with the clock, meaning the reset operation occurs on the same clock edge.
+- When the reset signal (R) is asserted (set to 1) on the clock edge, it forces the Q output to a known state (usually 0) at that specific clock edge.
+
+```gvim dff_syncres.v```
+![Screenshot from 2023-09-01 10-38-50](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/5e361d9b-fa2a-4dcf-9488-153e0a5f0645)
+
+#### D Flip-Flop with Asynchronous Reset and Synchronous Reset
+- D Flip-Flop can be designed with both asynchronous and synchronous reset capabilities to provide flexibility in handling reset operations in digital circuits.
+
+``` gvim dff_asyncres_syncres.v```
+
+![Screenshot from 2023-09-01 10-45-56](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/7eda3f7f-6ac7-4f93-b147-cbd99fb657dc)
+
+ </details>
  
+<details>
+<summary> Lab Flop Synthesis Simulations </summary>
 
+#### D Flip-Flop with Asynchronous Reset
 
 
 
