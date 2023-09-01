@@ -790,12 +790,35 @@ show
 <details>
 <summary> Optimisations  </summary>
 
+```
+cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+gvim mult_2.v
+```
+![Screenshot from 2023-09-01 22-23-54](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/dcb3e19c-1da3-4b36-991a-57b5e5176b56)
 
 
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog mult_2.v
+synth -top mul2
 
+```
+![Screenshot from 2023-09-01 22-39-32](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/147391a4-52ed-4782-adb1-22cebbe36199)
 
+```
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
 
+```
+![Screenshot from 2023-09-01 22-40-48](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/787dc2bd-3eb0-4683-83e0-4462ec7c3f8a)
 
+```
+
+write_verilog -noattr mul2_netlist.v
+!gvim mul2_netlist.v
+
+```
 
 
 
