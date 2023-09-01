@@ -285,7 +285,9 @@ riscv64-unknown-elf-objdump -d custom1to9.o|less
 </details>
 
 # RTL Design using Verilog with SKY130 Technology
-## Introduction to Open-Source Simulator iVerilog
+## DAY3 - Introduction to Verilog RTL design and synthesis
+
+### Introduction to Open-Source Simulator iVerilog
 
 <details>
 <summary> Introduction to iVerilog Design Testbench </summary>
