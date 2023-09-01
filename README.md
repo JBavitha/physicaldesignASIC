@@ -819,6 +819,50 @@ write_verilog -noattr mul2_netlist.v
 !gvim mul2_netlist.v
 
 ```
+![Screenshot from 2023-09-01 22-42-16](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/2f0e77d1-8a54-4b6f-943e-f5ecc1a38cf3)
+
+``` gvim mult_8.v ```
+
+![Screenshot from 2023-09-01 22-47-55](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a6b371fc-4e56-4ca4-a891-4c61e39c818d)
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib  
+read_verilog mult_8.v
+synth -top mult8
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+![Screenshot from 2023-09-01 22-55-18](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ee4feb63-e16c-4f55-b656-662bcabecc33)
+
+![Screenshot from 2023-09-01 22-55-46](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/27dc1e7f-40f4-4e62-83ed-f29f44f42128)
+
+```
+cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+yosys
+write_verilog -noattr mult8_netlist.v
+!gvim mult8_netlist.v
+```
+![Screenshot from 2023-09-01 22-59-16](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/f8430cc1-cf17-4c65-b7bb-4d6de1956233)
+
+</details>
+
+## Combinational and Sequential Optimisations
+
+### Introduction to Optimisations
+
+<details>
+<summary> Optimisations(Intro)  </summary>
+
+
+
+
+
+
+
+
+
+
 
 
 
