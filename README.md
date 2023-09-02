@@ -1139,7 +1139,8 @@ write_verilog -noattr mult8_netlist.v
 
   ```
 
-![Screenshot from 2023-09-02 21-14-48](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a31b09e5-1267-48ea-82df-393bece706f5)
+![Screenshot from 2023-09-02 21-41-51](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/e156ee29-1a09-4539-8f81-b820768286fd)
+
 
 - ```
   cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
@@ -1158,9 +1159,11 @@ write_verilog -noattr mult8_netlist.v
 
   show
   ```
-![Screenshot from 2023-09-02 21-17-54](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/68cce4a0-43a3-45a9-ae83-55eb3e36ccd9)
+![Screenshot from 2023-09-02 21-43-56](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/1d61883a-2b3c-488c-aafd-6617d31aaa13)
 
-![Screenshot from 2023-09-02 21-18-41](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/204bfdf2-fa1b-4a10-bb9b-b4a150fa5b8d)
+
+![Screenshot from 2023-09-02 21-44-43](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/06004e2a-ef41-47d1-9bec-0a5e1f33f3c1)
+
 
 </details>
 
@@ -1186,7 +1189,7 @@ write_verilog -noattr mult8_netlist.v
 
   ```
 
-![Screenshot from 2023-09-02 21-14-48](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a31b09e5-1267-48ea-82df-393bece706f5)
+![Screenshot from 2023-09-02 22-09-32](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/17f770d7-cde1-43bc-9fe7-f52c023244b5)
 
 - ```
   cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
@@ -1205,9 +1208,11 @@ write_verilog -noattr mult8_netlist.v
 
   show
   ```
-![Screenshot from 2023-09-02 21-17-54](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/68cce4a0-43a3-45a9-ae83-55eb3e36ccd9)
+![Screenshot from 2023-09-02 22-11-33](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/51d8e8f1-4d31-41f7-82c5-a38457817316)
 
-![Screenshot from 2023-09-02 21-18-41](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/204bfdf2-fa1b-4a10-bb9b-b4a150fa5b8d)
+
+![Screenshot from 2023-09-02 22-12-26](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/f4250d2b-5ad1-43ee-b252-bf4e7eb66a3f)
+
 
 </details>
 
@@ -1220,7 +1225,7 @@ write_verilog -noattr mult8_netlist.v
 
   gvim dff_const4.v
   ```
-![Screenshot from 2023-09-02 21-05-46](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/86653ba6-89df-4887-ab78-a2240b825b97)
+![Screenshot from 2023-09-02 21-35-55](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/79b6d745-e7f0-409e-b813-2069a00c4858)
 
 - ```
   cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
@@ -1233,7 +1238,8 @@ write_verilog -noattr mult8_netlist.v
 
   ```
 
-![Screenshot from 2023-09-02 21-14-48](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a31b09e5-1267-48ea-82df-393bece706f5)
+![Screenshot from 2023-09-02 22-15-14](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/01982099-1193-4f2e-b2b5-bead630dbcb7)
+
 
 - ```
   cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
@@ -1252,9 +1258,10 @@ write_verilog -noattr mult8_netlist.v
 
   show
   ```
-![Screenshot from 2023-09-02 21-17-54](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/68cce4a0-43a3-45a9-ae83-55eb3e36ccd9)
+![Screenshot from 2023-09-02 22-19-27](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/30a215cc-5ade-491b-b678-9158214b3dd5)
 
-![Screenshot from 2023-09-02 21-18-41](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/204bfdf2-fa1b-4a10-bb9b-b4a150fa5b8d)
+
+![Screenshot from 2023-09-02 22-20-07](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/d9123f3e-14cb-4032-bfcc-f443f83db1ed)
 
 </details>
 
@@ -1267,7 +1274,8 @@ write_verilog -noattr mult8_netlist.v
 
   gvim dff_const5.v
   ```
-![Screenshot from 2023-09-02 21-05-46](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/86653ba6-89df-4887-ab78-a2240b825b97)
+![Screenshot from 2023-09-02 21-37-12](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/7b61db48-f176-4213-9d42-a92c46aa742f)
+
 
 - ```
   cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
@@ -1280,7 +1288,8 @@ write_verilog -noattr mult8_netlist.v
 
   ```
 
-![Screenshot from 2023-09-02 21-14-48](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a31b09e5-1267-48ea-82df-393bece706f5)
+![Screenshot from 2023-09-02 22-17-49](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/c600e4d0-515d-444e-ad81-739de9229b3a)
+
 
 - ```
   cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
@@ -1299,9 +1308,9 @@ write_verilog -noattr mult8_netlist.v
 
   show
   ```
-![Screenshot from 2023-09-02 21-17-54](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/68cce4a0-43a3-45a9-ae83-55eb3e36ccd9)
+![Screenshot from 2023-09-02 22-22-06](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/fb785e97-a58f-4f04-bf93-6d0c4f2dc7a0)
 
-![Screenshot from 2023-09-02 21-18-41](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/204bfdf2-fa1b-4a10-bb9b-b4a150fa5b8d)
+![Screenshot from 2023-09-02 22-23-51](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/586b32f2-4350-40a4-83ec-65deaa4e215c)
 
 </details>
 
