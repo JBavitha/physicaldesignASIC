@@ -790,7 +790,7 @@ show
 </details>
 
 <details>
-<summary> Optimisations  </summary>
+<summary> Interesting Optimisations  </summary>
 
 ```
 cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
@@ -856,9 +856,27 @@ write_verilog -noattr mult8_netlist.v
 <details>
 <summary> Optimisations(Intro)  </summary>
 
+#### Combinational Logic Optimisation
 
+- Squeezing the logic to get the most optimised design
+  - Area and Power savings
 
+- Constant Propagation
+  - Direct Optimisaton
 
+- Boolean Logic Optimisation
+  - K-Map
+  - Quine McKluskey
+
+#### Sequential logic Optimisation
+
+- Basic
+  - Sequential Constant propagation
+
+- Advanced 
+  - State optimisation
+  - Retiming
+  - Sequential Logic Cloning (Floor Plan Aware Synthesis)
 
 
 
