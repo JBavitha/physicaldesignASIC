@@ -1376,7 +1376,7 @@ write_verilog -noattr mult8_netlist.v
 
   read_verilog counter_opt2.v
 
-  synth -top counter_opt2
+  synth -top counter_opt
 
   dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
@@ -1384,6 +1384,44 @@ write_verilog -noattr mult8_netlist.v
 
   show
   ```
+![Screenshot from 2023-09-02 23-08-18](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/5fee8986-8675-4668-81d3-b41a9af0ec09)
+![Screenshot from 2023-09-02 23-09-17](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/78c2faa3-b2c6-4cee-955e-3d69771a3c7b)
+
+</details>
+
+## DAY6 - GLS, blocking vs non-blocking and Synthesis-Simulation mismatch
+
+### GLS, Synthesis-Simulation mismatch and Blocking/Non-blocking statements
+
+<details>
+<summary> GLS Concepts And Flow Using Iverilog   </summary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
