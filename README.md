@@ -1026,10 +1026,34 @@ write_verilog -noattr mult8_netlist.v
 
 </details>
 
+<details>
+<summary> multiple_module_opt </summary>
 
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
 
+  gvim multiple_module_opt.v
+  ```
 
+![Screenshot from 2023-09-02 20-42-45](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/f153dfb9-6a30-451f-ab76-a284ff8195d5)
 
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  yosys
+
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  read_verilog multiple_module_opt.v
+
+  synth -top multiple_module_opt
+
+  opt_clean -purge
+
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  show
+  ```
 
 
 
