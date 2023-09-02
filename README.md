@@ -878,6 +878,147 @@ write_verilog -noattr mult8_netlist.v
   - Retiming
   - Sequential Logic Cloning (Floor Plan Aware Synthesis)
 
+</details>
+
+### Combinational Logic Optimisations
+<details>
+<summary> Combinational logic optimizations  </summary>
+
+<details>
+<summary> opt_check  </summary>
+
+- ``` gvim opt_check.v ```
+
+![Screenshot from 2023-09-02 20-05-52](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/7851fec1-9d8c-4b1d-bdb4-6fa4e9a71443)
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  yosys
+  
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  read_verilog opt_check.v
+
+  synth -top opt_check
+
+  opt_clean -purge
+
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  show
+  ```
+![Screenshot from 2023-09-02 20-11-05](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/71141646-ea11-4cf7-a5b6-b60b5d6aa792)
+
+![Screenshot from 2023-09-02 20-11-51](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/167144f7-7f08-40f9-b63d-562fb75a6acd)
+
+
+</details>
+
+<details>
+<summary> opt_check2  </summary>
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  gvim opt_check2.v
+  ```
+
+![Screenshot from 2023-09-02 20-14-55](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/515b469a-ca20-4721-afa4-aa9827aa3d81)
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  yosys
+
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  read_verilog opt_check2.v
+
+  synth -top opt_check2
+
+  opt_clean -purge
+
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  show
+  ```
+
+
+![Screenshot from 2023-09-02 20-16-53](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a32d2961-bb18-4a65-a360-89eb7adf3a10)
+
+![Screenshot from 2023-09-02 20-16-25](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/6c9d4359-9700-46a4-809c-8135ff1b3e13)
+
+</details>
+
+<details>
+<summary> opt_check3  </summary>
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  gvim opt_check3.v
+  ```
+![Screenshot from 2023-09-02 20-22-24](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/762a6883-0481-41f3-8cdf-beeaa8f2a7bb)
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  yosys
+
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  read_verilog opt_check3.v
+
+  synth -top opt_check3
+
+  opt_clean -purge
+
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  show
+  ```
+![Screenshot from 2023-09-02 20-25-47](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/1f6af05a-a9f7-4c7c-8517-f27df5e1964c)
+
+![Screenshot from 2023-09-02 20-26-49](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/9fe8bf9f-c4f9-41c0-9fc9-b91fe55f1432)
+
+
+</details>
+
+<details>
+<summary> opt_check4  </summary>
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  gvim opt_check4.v
+  ```
+![Screenshot from 2023-09-02 20-33-17](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/3e339813-f7e3-41ad-bce7-58003542d174)
+
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  yosys
+
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  read_verilog opt_check4.v
+
+  synth -top opt_check4
+
+  opt_clean -purge
+
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  show
+  ```
+![Screenshot from 2023-09-02 20-30-54](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/819e3485-03ce-4365-83cc-6242103ca7f4)
+
+![Screenshot from 2023-09-02 20-31-49](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/50caf06e-a64b-4d2c-ad3d-9b82bb3d286e)
+
+
+</details>
 
 
 
@@ -886,6 +1027,11 @@ write_verilog -noattr mult8_netlist.v
 
 
 
+
+
+
+
+</details>
 
 
 
