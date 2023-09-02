@@ -1048,20 +1048,41 @@ write_verilog -noattr mult8_netlist.v
 
   synth -top multiple_module_opt
 
+  flatten
+
   opt_clean -purge
 
   abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
   show
   ```
+![Screenshot from 2023-09-02 20-44-49](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/e55d67c6-b188-462b-8237-f37c62528e55)
 
+![Screenshot from 2023-09-02 20-55-52](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/d855a707-257d-4e36-ac50-1849c6b06077)
 
-
-
-
+</details>
 
 
 </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
