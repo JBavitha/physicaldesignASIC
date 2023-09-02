@@ -887,9 +887,14 @@ write_verilog -noattr mult8_netlist.v
 <details>
 <summary> opt_check  </summary>
 
-- ``` gvim opt_check.v ```
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
 
-![Screenshot from 2023-09-02 20-05-52](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/7851fec1-9d8c-4b1d-bdb4-6fa4e9a71443)
+  gvim opt_check.v
+  ```
+  
+![Screenshot from 2023-09-02 20-36-29](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/e934da93-6477-4b3e-aa66-13af483c1e6e)
+
 
 - ```
   cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
@@ -924,7 +929,8 @@ write_verilog -noattr mult8_netlist.v
   gvim opt_check2.v
   ```
 
-![Screenshot from 2023-09-02 20-14-55](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/515b469a-ca20-4721-afa4-aa9827aa3d81)
+![image](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/aa7d902d-6a3f-42dc-a8d5-a285bcd2d983)
+
 
 - ```
   cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
