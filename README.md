@@ -882,7 +882,7 @@ write_verilog -noattr mult8_netlist.v
 
 ### Combinational Logic Optimisations
 <details>
-<summary> Combinational logic optimizations  </summary>
+<summary> Combinational logic optimizations(LABS)  </summary>
 
 <details>
 <summary> opt_check  </summary>
@@ -1065,16 +1065,248 @@ write_verilog -noattr mult8_netlist.v
 
 </details>
 
+### Sequential Logic Optimisations
+
+<details>
+<summary> Sequential logic optimizations(LABS) </summary>
+
+<details>
+<summary> dff_const1 </summary>
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  gvim dff_const1.v
+  ```
+![Screenshot from 2023-09-02 21-05-46](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/86653ba6-89df-4887-ab78-a2240b825b97)
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  iverilog dff_const1.v tb_dff_const1.v
+
+  ./a.out
+
+  gtkwave tb_dff_const1.vcd
+
+  ```
+
+![Screenshot from 2023-09-02 21-14-48](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a31b09e5-1267-48ea-82df-393bece706f5)
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  yosys
+
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  read_verilog dff_const1.v
+
+  synth -top dff_const1
+
+  opt_clean -purge
+
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  show
+  ```
+![Screenshot from 2023-09-02 21-17-54](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/68cce4a0-43a3-45a9-ae83-55eb3e36ccd9)
+
+![Screenshot from 2023-09-02 21-18-41](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/204bfdf2-fa1b-4a10-bb9b-b4a150fa5b8d)
+
+</details>
 
 
+<details>
+<summary> dff_const2 </summary>
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  gvim dff_const2.v
+  ```
+![Screenshot from 2023-09-02 21-29-01](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/aa5c2bef-3bc9-49ac-990d-3213f1450938)
 
 
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  iverilog dff_const2.v tb_dff_const2.v
+
+  ./a.out
+
+  gtkwave tb_dff_const2.vcd
+
+  ```
+
+![Screenshot from 2023-09-02 21-14-48](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a31b09e5-1267-48ea-82df-393bece706f5)
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  yosys
+
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  read_verilog dff_const2.v
+
+  synth -top dff_const2
+
+  opt_clean -purge
+
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  show
+  ```
+![Screenshot from 2023-09-02 21-17-54](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/68cce4a0-43a3-45a9-ae83-55eb3e36ccd9)
+
+![Screenshot from 2023-09-02 21-18-41](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/204bfdf2-fa1b-4a10-bb9b-b4a150fa5b8d)
+
+</details>
 
 
+<details>
+<summary> dff_const3 </summary>
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  gvim dff_const3.v
+  ```
+![Screenshot from 2023-09-02 21-31-48](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/c01ba62f-6643-4c34-a252-37a218d8b985)
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  iverilog dff_const3.v tb_dff_const3.v
+
+  ./a.out
+
+  gtkwave tb_dff_const3.vcd
+
+  ```
+
+![Screenshot from 2023-09-02 21-14-48](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a31b09e5-1267-48ea-82df-393bece706f5)
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  yosys
+
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  read_verilog dff_const3.v
+
+  synth -top dff_const3
+
+  opt_clean -purge
+
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  show
+  ```
+![Screenshot from 2023-09-02 21-17-54](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/68cce4a0-43a3-45a9-ae83-55eb3e36ccd9)
+
+![Screenshot from 2023-09-02 21-18-41](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/204bfdf2-fa1b-4a10-bb9b-b4a150fa5b8d)
+
+</details>
 
 
+<details>
+<summary> dff_const4 </summary>
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  gvim dff_const4.v
+  ```
+![Screenshot from 2023-09-02 21-05-46](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/86653ba6-89df-4887-ab78-a2240b825b97)
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  iverilog dff_const4.v tb_dff_const4.v
+
+  ./a.out
+
+  gtkwave tb_dff_const4.vcd
+
+  ```
+
+![Screenshot from 2023-09-02 21-14-48](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a31b09e5-1267-48ea-82df-393bece706f5)
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  yosys
+
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  read_verilog dff_const4.v
+
+  synth -top dff_const4
+
+  opt_clean -purge
+
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  show
+  ```
+![Screenshot from 2023-09-02 21-17-54](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/68cce4a0-43a3-45a9-ae83-55eb3e36ccd9)
+
+![Screenshot from 2023-09-02 21-18-41](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/204bfdf2-fa1b-4a10-bb9b-b4a150fa5b8d)
+
+</details>
 
 
+<details>
+<summary> dff_const5 </summary>
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  gvim dff_const5.v
+  ```
+![Screenshot from 2023-09-02 21-05-46](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/86653ba6-89df-4887-ab78-a2240b825b97)
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  iverilog dff_const5.v tb_dff_const5.v
+
+  ./a.out
+
+  gtkwave tb_dff_const5.vcd
+
+  ```
+
+![Screenshot from 2023-09-02 21-14-48](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a31b09e5-1267-48ea-82df-393bece706f5)
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  yosys
+
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  read_verilog dff_const5.v
+
+  synth -top dff_const5
+
+  opt_clean -purge
+
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  show
+  ```
+![Screenshot from 2023-09-02 21-17-54](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/68cce4a0-43a3-45a9-ae83-55eb3e36ccd9)
+
+![Screenshot from 2023-09-02 21-18-41](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/204bfdf2-fa1b-4a10-bb9b-b4a150fa5b8d)
+
+</details>
+
+
+</details>
 
 
 
