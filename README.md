@@ -1317,11 +1317,73 @@ write_verilog -noattr mult8_netlist.v
 
 </details>
 
+### Sequential Optimisations for Unused Outputs
+
+<details>
+<summary> counter_opt  </summary>
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  gvim counter_opt.v
+  ```
+  
+![Screenshot from 2023-09-02 22-37-03](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/b47ae5cc-c456-4da0-996b-027ef546fe03)
+
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  yosys
+  
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  read_verilog counter_opt.v
+
+  synth -top counter_opt
+
+  dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  show
+  ```
+![Screenshot from 2023-09-02 22-38-38](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/c1f2b24f-ede1-4ab5-baaa-ae293b5bd01a)
+
+![Screenshot from 2023-09-02 22-39-34](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/7ca5e05d-41e3-4b51-8ac8-04a9fa7eaee1)
+
+</details>
+
+<details>
+<summary> counter_opt2  </summary>
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  gvim counter_opt2.v
+  ```
+  
+![Screenshot from 2023-09-02 22-43-30](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/86c89446-f5ee-4824-9337-961a0d43acf8)
 
 
 
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
 
+  yosys
+  
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
+  read_verilog counter_opt2.v
+
+  synth -top counter_opt2
+
+  dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  show
+  ```
 
 
 
