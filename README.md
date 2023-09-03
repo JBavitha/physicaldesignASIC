@@ -1425,12 +1425,38 @@ write_verilog -noattr mult8_netlist.v
   - Blocking vs Non-Blocking Assignments
   - Non Standard Verilog Coding
 
+</details>
 
 
+<details>
+<summary> Blocking And Non-Blocking Statements In Verilog  </summary>
 
+- Blocking Assignment (=):
+  - In Verilog, the = operator is used for blocking assignments.
+  - When a blocking assignment statement is encountered, it evaluates the right-hand expression and assigns the result to the left-hand variable or register immediately.
+  - The next statement waits for the blocking assignment to complete before executing.
+  - This means that statements are executed in a sequential manner, one after the other.
+  - Blocking assignments are commonly used when you want to model synchronous logic behavior or when you need to ensure specific sequencing of operations in your hardware description. 
 
+- Non-Blocking Assignment (<=):
+  - Non-blocking assignments use the <= operator to indicate that the assigned values will be updated simultaneously at the end of the current simulation time step, ensuring that all assignments are scheduled without blocking each other.
+  - Non-blocking assignments are commonly used in synchronous digital designs to model behavior where multiple signals need to change simultaneously, such as in flip-flop updates or pipeline stages.
+  - They help ensure proper sequencing of operations in hardware description languages like Verilog and VHDL.
 
+</details>
 
+<details>
+<summary> Caveats with Blocking Statements  </summary>
+
+- Blocking statements in Verilog are straightforward and easy to use, but they come with some caveats that designers should be aware of to avoid unexpected behavior or simulation mismatches.
+- Here are some key caveats and considerations when working with blocking statements in Verilog:
+  - Sequential Execution: Blocking statements execute sequentially in the order they appear within a procedural block. This can be both an advantage and a limitation. It's essential to ensure that your code's sequence matches your intended behavior, especially in synchronous designs.
+
+  - Race Conditions: Using only blocking assignments may lead to race conditions in some situations. Race conditions occur when multiple assignments to the same variable occur within the same procedural block, and the order of execution affects the final outcome. To avoid race conditions, you may need to use non-blocking assignments (<=) in specific cases.
+  - Behavioral vs. RTL Simulation: Verilog is often used for both behavioral and RTL (Register-Transfer Level) simulations. In behavioral simulations, blocking statements may be sufficient to model the desired behavior. However, in RTL simulations, where hardware details are more critical, you should carefully consider the use of blocking vs. non-blocking assignments to model accurate hardware behavior.
+  - Simulation vs. Synthesis: Verilog code is often used for simulation and synthesis. While blocking statements are generally well-suited for simulation, they may not always represent hardware accurately when targeting synthesis for FPGA or ASIC implementation. For synthesis, you may need to follow synthesis-specific coding guidelines.
+  
+</details>
 
 
 
