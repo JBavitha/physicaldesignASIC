@@ -1586,8 +1586,74 @@ gtkwave tb_bad_mux.vcd
 </details>
 
 
+### Labs on Synth-Sim Mismatch for Blocking Statement
+
+<details>
+<summary> blocking_caveat  </summary>
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  gvim blocking_caveat.v
+  ```
+![Screenshot from 2023-09-03 11-25-32](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/4dbe5f05-42f9-4e73-a438-b8f0fbbf170e)
 
 
+
+##### Simulation
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  iverilog blocking_caveat.v tb_blocking_caveat.v
+
+  ./a.out
+
+  gtkwave tb_blocking_caveat.vcd
+
+  ```
+
+![Screenshot from 2023-09-03 11-27-55](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/a92d8e92-d26e-45dc-8b01-664d944e9115)
+
+
+
+##### Synthesis
+
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  yosys
+
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  read_verilog blocking_caveat.v
+
+  synth -top blocking_caveat
+
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  show
+  ```
+
+![Screenshot from 2023-09-03 11-29-33](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ea6f9d7d-e48e-4b55-8631-dc0625c1d6d0)
+
+![Screenshot from 2023-09-03 11-30-05](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/17851192-014b-43e2-8833-62235ada61a4)
+
+
+
+##### To do GLS 
+
+```
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v blocking_caveat_net.v tb_blocking_caveat.v
+
+./a.out
+
+gtkwave tb_blocking_caveat.vcd   
+
+```
+![Screenshot from 2023-09-03 11-32-01](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/ccc708f8-abae-4fb1-a234-3b5886dd11bd)
+
+</details>
 
 
 
