@@ -1396,11 +1396,34 @@ write_verilog -noattr mult8_netlist.v
 <details>
 <summary> GLS Concepts And Flow Using Iverilog   </summary>
 
+- GLS : Gate Level Simulation
+- What is GLS?
+  - Running the test bench with Netlist as Design Under Test.
+  - Netlist is logically same as RTL Code.
+    - Same Test Bench will align with the Design.
+
+- Why GLS?
+
+  - Verify the logical correctness of design after synthesis
+  - Ensuring the timing of the design is met.
+    - For this GLS needs to be run with delay annotation.
 
 
+![Screenshot from 2023-09-03 09-00-54](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/282aca45-c7d1-4944-b422-db4b17f8c6eb)
 
+- Gate level verilog models
+  - Timing aware (validate functionality + timing )
+  - Functional (validate funtionality of the design alone.)
 
+</details>
 
+<details>
+<summary> Synthesis-Simulation mismatch  </summary>
+
+- Synthesis-simulation mismatch refers to a discrepancy or misalignment between the results of a synthesis process and a subsequent simulation or modeling of the same system or process.This happens due to
+  - Missing sensitivity List
+  - Blocking vs Non-Blocking Assignments
+  - Non Standard Verilog Coding
 
 
 
