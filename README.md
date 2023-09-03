@@ -1458,7 +1458,10 @@ write_verilog -noattr mult8_netlist.v
   
 </details>
 
+### Labs on GLS and Synthesis-Simulation Mismatch
 
+<details>
+<summary> ternary_operator_mux   </summary>
 
 
 
