@@ -1463,6 +1463,151 @@ write_verilog -noattr mult8_netlist.v
 <details>
 <summary> ternary_operator_mux   </summary>
 
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  gvim ternary_operator_mux.v
+  ```
+![Screenshot from 2023-09-03 10-24-49](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/de698735-c142-4fba-b08c-b5bfd2e0bf87)
+
+##### Simulation
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
+
+  ./a.out
+
+  gtkwave tb_ternary_operator_mux.vcd
+
+  ```
+
+![Screenshot from 2023-09-03 10-31-26](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/739ec6f8-5824-4d89-950a-6447293d58fb)
+
+##### Synthesis
+
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  yosys
+
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  read_verilog ternary_operator_mux.v
+
+  synth -top ternary_operator_mux
+
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  show
+  ```
+
+![Screenshot from 2023-09-03 10-33-19](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/1958b0d8-0ee7-49f8-ac2e-ceccc9656cf4)
+
+![Screenshot from 2023-09-03 10-33-47](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/b3ac58f4-fbf2-4fe3-a82e-8670509e5609)
+
+##### To do GLS 
+
+```
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v ternary_operator_mux_net.v tb_ternary_operator_mux.v
+
+./a.out
+
+gtkwave tb_ternary_operator_mux.vcd
+```
+![Screenshot from 2023-09-03 10-52-42](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/0076b875-ba55-4711-aeb0-93ad574ddb82)
+
+</details>
+
+<details>
+<summary> bad_mux  </summary>
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  gvim bad_mux.v
+  ```
+![Screenshot from 2023-09-03 10-59-29](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/3f32858c-ab7b-45b6-9d17-c304da10cc5b)
+
+
+##### Simulation
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  iverilog bad_mux.v tb_bad_mux.v
+
+  ./a.out
+
+  gtkwave tb_bad_mux.vcd
+
+  ```
+
+![Screenshot from 2023-09-03 11-01-48](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/6a35601f-a430-4121-ab54-891e64be2c04)
+
+
+##### Synthesis
+
+
+- ```
+  cd vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
+  yosys
+
+  read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  read_verilog bad_mux.v
+
+  synth -top bad_mux
+
+  abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+  show
+  ```
+
+![Screenshot from 2023-09-03 11-08-21](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/54525af4-2b0b-4d6f-bf12-021d4cee19d1)
+
+![Screenshot from 2023-09-03 11-15-21](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/9326efc1-c5c7-4abf-b261-b9cd58ac48ad)
+
+
+##### To do GLS 
+
+```
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v bad_mux_net.v tb_bad_mux.v
+
+./a.out
+
+gtkwave tb_bad_mux.vcd
+```
+
+![Screenshot from 2023-09-03 11-17-51](https://github.com/JBavitha/physicaldesignASIC/assets/142578450/4af02d35-a990-441d-ac6c-74f5465cf1e3)
+
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
